@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1.0.8
         with:
           # Artifact name
-          name: test # optional, default is github-pages
+          name: # optional, default is github-pages
           # Path of the directory containing the static assets.
           path: # default is _site/
           # Duration after which artifact will expire in days.
