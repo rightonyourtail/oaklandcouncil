@@ -29,7 +29,7 @@ jobs:
       #- name: Setup Pages
       #  uses: actions/configure-pages@v3
       - name: Run Scraper
-        run: ./ScraperUpdate2.sh
+        run: ./.github/workflows/ScraperUpdate2.sh
         shell: bash
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1.0.8
