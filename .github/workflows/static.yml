@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-python@v3.1.4
       - run: pip install -r requirements.txt
       - name: Run Scraper
-        run: chmod +x ./ScraperUpdate2.sh ./src-Scraper/*.py && ./ScraperUpdate2.sh
+        run: chmod +x ./ScraperUpdate2.sh && ./ScraperUpdate2.sh
         shell: bash
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1.0.8
