@@ -28,6 +28,8 @@ jobs:
         uses: actions/checkout@v3
       #- name: Setup Pages
       #  uses: actions/configure-pages@v3
+      - name: Setup Python
+        uses: actions/setup-python@v3.1.4
       - name: Run Scraper
         run: chmod +x ./ScraperUpdate2.sh ./src-Scraper/*.py && ./ScraperUpdate2.sh
         shell: bash
