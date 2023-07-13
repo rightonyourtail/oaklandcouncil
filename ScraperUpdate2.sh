@@ -106,7 +106,7 @@ date
 # Scrape the current year if it exists
 #
 echo "Doing the JSON Scrape for YEAR $CURRENTYEAR"
-COMMAND="src-Scraper/run_meeting_json.py --year $CURRENTYEAR --output WebPage/website/scraped/ScraperTEMP.json --calendars WebPage/website/calendars/"
+COMMAND="python src-Scraper/run_meeting_json.py --year $CURRENTYEAR --output WebPage/website/scraped/ScraperTEMP.json --calendars WebPage/website/calendars/"
 echo "Starting the JSON Scrape with the command:" $COMMAND
 $PYTHON $COMMAND
 retVal=$?
