@@ -30,7 +30,7 @@ jobs:
       #  uses: actions/configure-pages@v3
       - name: Setup Python
         uses: actions/setup-python@v3.1.4
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
       - name: Run Scraper
         run: chmod +x ./ScraperUpdate2.sh ./src-Scraper/*.py && ./ScraperUpdate2.sh
         shell: bash
