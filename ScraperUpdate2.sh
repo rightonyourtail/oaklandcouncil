@@ -119,7 +119,7 @@ retVal=$?
   echo ""
 
 echo "Workaround: Scraping Granicus to fix empty Video links in $currentdwnldfilename"
-COMMAND="src-Scraper/scrape_granicus.py --file $currentdwnldfilename"
+COMMAND="python src-Scraper/scrape_granicus.py --file $currentdwnldfilename"
 echo "Starting the JSON Scrape with the command:" $COMMAND
 $PYTHON $COMMAND
 retVal=$?
@@ -168,7 +168,7 @@ if [ "$CURRENTMONTH" == "12" ];then
     #
 
     echo "Doing the JSON Scrape for YEAR $NEXTYEAR"
-    COMMAND="src-Scraper/run_meeting_json.py --year $NEXTYEAR --output WebPage/website/scraped/ScraperTEMP.json --calendars WebPage/website/calendars/"
+    COMMAND="python src-Scraper/run_meeting_json.py --year $NEXTYEAR --output WebPage/website/scraped/ScraperTEMP.json --calendars WebPage/website/calendars/"
     echo "Starting the JSON Scrape with the command:" $COMMAND
     $PYTHON $COMMAND
     retVal=$?
@@ -183,7 +183,7 @@ if [ "$CURRENTMONTH" == "12" ];then
 elif [ "$CURRENTMONTH" == "1" ];then
 
     echo "Doing the JSON Scrape for YEAR $LASTYEAR"
-    COMMAND="src-Scraper/run_meeting_json.py --year $LASTYEAR --output WebPage/website/scraped/ScraperTEMP.json --calendars WebPage/website/calendars/"
+    COMMAND="python src-Scraper/run_meeting_json.py --year $LASTYEAR --output WebPage/website/scraped/ScraperTEMP.json --calendars WebPage/website/calendars/"
     echo "Starting the JSON Scrape with the command:" $COMMAND
     $PYTHON $COMMAND
     retVal=$?
@@ -206,7 +206,7 @@ pwd
 echo " "
 echo "Running Web Programs"
 
-$PYTHON  src-Webpage/main.py  #Run the main program
+python src-Webpage/main.py  #Run the main program
 echo " "
 
 #cd Webpage/website    #Go back to Webpage
