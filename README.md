@@ -31,6 +31,7 @@ When a site is newly cloned the script Scraper_full_json.sh must be run first to
 * As the story goes...this project started as a fork/clone of a project running in New York. ChatGPT currently states that Councilmatic was started by the civic tech organization DataMade and was first developed for the City of Chicago. Anyone into software archaeology?
 * Very early on the OpenOakland version was rebuilt almost entirely to use Bash and Python.
 * The earliest OpenOakland version would initially scrape data from the Oakland City website but [most] data later became more easyly accessible via an API and Councilmatic was modified accordingly.
+* The official Oakland City meetings calendar can be viewed at https://oakland.legistar.com/calendar.aspx
 
 ### Mission & Vision
 To foster openness of policy making in Oakland Government. This is to be accomplished by improving the accessibility of City Council meeting information and by promoting interest in City Council activities.
@@ -63,7 +64,7 @@ Options to view all meeting of the current year or any previous years.
 4. Capture and processing of links to meeting videos.
 5. Building into GitHub's Actions and Pages for a no-charge site.
   * The prototype production pages are generating to https://oaklandcitycouncil.org
-  * GitHub repository is currently at rightonyourtail/oaklandcouncil though this is likely change before we're done.
+  * GitHub repository is currently at https://github.com/rightonyourtail/oaklandcouncil/ though this is likely change before we're done.
 
 ### Ideas for expansion
 * Make the meeting history more easily accessible with search or ???
