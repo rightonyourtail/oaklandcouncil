@@ -62,7 +62,7 @@ Options to view all meeting of the current year or any previous years.
 3. Organization of permissions.
 4. Capture and processing of links to meeting videos.
 5. Building into GitHub's Actions and Pages for a no-charge site.
-  * The prototype production pages are generating https://oaklandcitycouncil.org
+  * The prototype production pages are generating to https://oaklandcitycouncil.org
   * GitHub repository is currently at rightonyourtail/oaklandcouncil though this is likely change before we're done.
 
 ### Ideas for expansion
